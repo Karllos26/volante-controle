@@ -1,0 +1,76 @@
+.volante-container {
+  text-align: center;
+}
+
+.volante {
+  width: 150px;
+  height: 150px;
+  background: url('/volante.png') no-repeat center center;
+  background-size: contain;
+  margin: 20px auto;
+}
+
+.control-bars {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.bar {
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: green;
+}
+
+.marchas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.marcha {
+  text-align: center;
+  font-weight: bold;
+  color: grey;
+}
+
+.marcha.active {
+  color: green;
+}
+
+.selection-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  text-align: center;
+  width: 300px;
+}
+
+.available-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.available-buttons, .available-axes {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
